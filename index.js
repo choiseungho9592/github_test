@@ -4,10 +4,12 @@ const port = 3000
 
 
 app.get('/user/:id', (req, res) => {
-  const q = req.params
-  console.log(q.id)
+  // const q = req.params
+  // console.log(q.id)
+  const q = req.query
+  console.log(q.name)
 
-  res.json({'userid' : q.id})
+  res.json({'name' : q.name})
 })
 
 

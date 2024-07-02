@@ -2,17 +2,30 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
 
-app.get('/user/:id', (req, res) => {
-  // const q = req.params
-  // console.log(q.id)
-  const q = req.query
-  console.log(q.name)
+app.get('/dog', (req, res) => {
+    res.json({ 'sound': '멍멍' })
+})
 
-  res.json({'name' : q.name})
+app.get('/sound/:name', (req, res) => {
+    const { name } = req.params
+
+    if (name == "dog") {
+        res.json({ 'sound': '멍멍' })
+    } else if (name == "cat") {
+        res.json({'sound' : '야옹'})
+    } else {
+        res.json({'sound' : '알수없음'})
+    }
+
 })
 
 
 app.listen(port, () => {
-  console.log(`Example app listenig on port ${port}`)
+    console.log(`Example app listening on port ${port}`)
 })
+
+//동물소리 api 서버 만들기 GET / sound/:name  name따라서 다른 울움소리

@@ -1,11 +1,36 @@
-<html>
-    <source>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장영준님 후원 감사합니다.</title>
+</head>
+<body>
+    <h6>2024.06.26 추가</h6>
+    <h6>https://github.com/choiseungho9592/github_test</h6>
+
+    <h6>2024.07.02 추가 cors 외부에서 여청시 에러처리</h6>
+    <h6>https://www.youtube.com/watch?v=Tt_tKhhhJqY&t=12s</h6>
+    <h6>https://developer.mozilla.org/ko/docs/Web/API/fetch</h6>
+
+    <h1>===================================================================</h1>
+
+    <h1 id="sound"></h1>
+    <input id="name" type="text">
+    <button onclick="getSound()">API 요청</button>
+    <script>
+        function getSound() {
+            const name = document.getElementById('name').value 
+            fetch(`http://localhost:3000/sound/${name}`)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data.sound)
+                document.getElementById('sound').innerHTML = data.sound
+            })
+        }
+
+    </script>
+    
+</body>
 </html>
 
-<body>
-    <h1>바디 추가</h1>
-    <h1>hello </h1>
-    <h6>2024.06.26 추가</h6>
-
-    <h3>https://github.com/choiseungho9592/github_test</h3>
-</body>

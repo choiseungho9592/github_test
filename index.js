@@ -1,6 +1,9 @@
 const express = require('express')
+var cors = require('cors')
 const app = express()
 const port = 3000
+
+app.use(cors())   //모든 모듈요청 허용 설정
 
 app.get('/', (req, res) => {
     res.send('Hello World')

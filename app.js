@@ -1,11 +1,23 @@
+
+// Module. logger.js  --> showLogMessage
+
+//logger.js 모듈 불러오기
+const logger = require(`./logger.js`)
+
+logger.showLogMessage(`첫번째 로그메시지`)
+logger.secondLog(`두번째 로그메시지`)
+console.log(`Logger 모듈에 들어있는 소중한 값은: `+logger.pvalue)
+
+
+
 // 3초에 한 번씩 주기적으로
 // setInterval(() => {
 //     console.log('node js 연습중입니다.')
 // }, 3000);
 
-setTimeout(() => {
-    console.log('타임아웃, 한 번만 실행')
-}, 3000);
+// setTimeout(() => {
+//     console.log('타임아웃, 한 번만 실행')
+// }, 3000);
 
 // //함수
 // function sayHello(name) {

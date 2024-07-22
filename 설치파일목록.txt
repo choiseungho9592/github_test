@@ -1,0 +1,45 @@
+1. VScode  설치
+
+2. Nodejs 설치 << node-v20.14.0-x64.msi 실행했는데 nodejs와 npm 함께 설치됨 2024.06.14 >>
+    Node.js : JavaScript 실행환경                            ex) node index.js
+    npm : JavaScript package manager
+        PS D:\WebDevStudy\web\week4> node -v
+        v20.14.0
+        PS D:\WebDevStudy\web\week4> npm -v
+        10.7.0
+                                               
+    PS D:\WebDevStudy\web\week4> npm init               (새로운 프로젝트에서 package.json 생성됨)
+    PS D:\WebDevStudy\web\week4> npm install figlet     ( package-lock.json, node_modules폴더  생성됨)
+    PS D:\WebDevStudy\web\week4> npm install cors   
+    PS D:\WebDevStudy\web\week4> npm install express --save    
+    PS D:\WebDevStudy\web\week4> npm install -g nodemon    (소스변경시 node 자동실행)
+
+    npm install -g nodemon 후 nodemon main.js 에러시 https://www.youtube.com/watch?v=Yn4fUo1i1-s  4:19 해결방법
+    npm install mysql
+    
+
+3. github.com  email : choi9592@gmail.com  pass : helpu1101**  name : choiseungho9592 24.06.23(Git-2.45.2-64-bit.exe)
+                                                https://github.com/choiseungho9592/github_test
+    1)Gitflow?      Branches 추가 Pull requests (https://www.youtube.com/watch?v=-27WScuoKQs)
+        *Master - 제품으로 출시 되는 브랜치
+        *Develop - 다음 출시 버전을 개발하는 브랜치
+        *Feature - 기능을 개발하는 브랜치
+        *Realease - 이번 출시 버전을 준비하는 브랜치
+        *Hotfix - 출시 버정에서 발생한 버그를 수정하는 브랜치
+    2)이슈관리  (프로젝트 진행시 나오는 모든 이슈,고객 미팅, 개발시 필요한 준비사항등 
+        프로젝트에서 필요한 문서관리 link, 진도관리, 개발진행관리 모든내용 통합관리 - 이메일) 55:00
+    3.commit시 최대한 상세하게 commit내용을 등록하고 commit카테고리를 지정하여 쉽게 찾고, 관히 될 수 있도록 한다.
+        commit카테고리  
+        ●[INITIAL] - repository를 생성하고 최초에 파일을 업로드 할 때
+        ●[ADD] - 신규 파일 추가
+        ●[UPDATE] - 코드 변경이 일어날 때
+        ●[REFACTORY] - 코드를 리팩토링 했을때
+        ●[FIX] - 잘못된 링크 정보 변경, 필요한 모듈 추가 및 삭제
+        ●[REMOVE] - 파일 제거
+        ●[STYLE] - 디자인 관련 변경사항
+
+
+
+
+최종 테스트중 영상
+https://www.youtube.com/watch?v=bjIR66sZ9kA&list=PLwsSnOYjEpei9J0zWjwvSWCnHyqxuPLTW&index=8
